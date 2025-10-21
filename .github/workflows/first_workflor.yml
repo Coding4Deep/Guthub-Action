@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: Greeting
         run: echo "Hello Deepak Sagar"
+  Second-Job:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Linux Info
+         run: free -h
