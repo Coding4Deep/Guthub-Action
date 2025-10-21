@@ -2,7 +2,7 @@ name: First Workflow
 on: workflow_dispatch
 jobs:
   First-Job:
-    runs-on: ubuntu-latest
+    runs-on: DEEP
     steps:
       - name: Greeting
         run: echo "Hello Deepak Sagar"
