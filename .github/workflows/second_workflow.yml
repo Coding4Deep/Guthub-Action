@@ -17,5 +17,13 @@ jobs:
     second-job:
       runs-on: ubuntu-latest
       steps:
-        - name: farewell
+        - name: print github context
           run: echo "${{ toJSON(github) }}"
+        - name: print job context
+          run: echo "${{ toJSON(job) }}"
+        - name: print steps context
+          run: echo "${{ toJSON(steps) }}"
+        - name: print runner context
+          run: echo "${{ toJSON(runner) }}"
+        - name: print pusher context
+          run: echo "${{ github.event.pusher.name }}"
