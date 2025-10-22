@@ -7,3 +7,6 @@ jobs:
       steps:
         - name: greeting
           run: echo "hello deepak sagar"
+      concurrency:
+        group: ${{ github.workflow }}-first-job
+        cancel-in-progress: true
