@@ -1,11 +1,9 @@
 name: Second Workflow
 on:
   push:
-
 jobs:
     first-job:
-      runs-on: self-hosted
+      runs-on: ubuntu:latest
       steps:
         - name: greeting
           run: echo "hello deepak sagar"
-          
