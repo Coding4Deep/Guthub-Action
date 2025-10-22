@@ -13,3 +13,9 @@ jobs:
       concurrency:
         group: ${{ github.workflow }}-first-job
         cancel-in-progress: true
+
+    second-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: farewell
+          run: echo "{{ tojson(github) }}"
