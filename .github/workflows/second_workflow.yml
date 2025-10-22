@@ -1,0 +1,11 @@
+name: Second Workflow
+on:
+  push:
+
+jobs:
+    first-job:
+      runs-on: self-hosted
+      steps:
+        - name: greeting
+          run: echo "hello deepak sagar"
+          
