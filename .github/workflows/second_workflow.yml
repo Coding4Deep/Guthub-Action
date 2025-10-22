@@ -6,7 +6,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: greeting
-          run: echo "hello deepak sagar"
+          run: |
+              echo "hello deepak sagar"
+              echo "this is a second line"
+              echo "this is a third line"
       concurrency:
         group: ${{ github.workflow }}-first-job
         cancel-in-progress: true
